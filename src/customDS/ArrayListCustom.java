@@ -17,7 +17,7 @@ public class ArrayListCustom<T> {
         return size;
     }
     public void growCapacity(){
-        if(size == elements.length -1){
+        if(size == elements.length){
             int newCapacity = elements.length * 2;
             T[] newElements = (T[]) new Object[newCapacity];
             System.arraycopy(elements,0, newElements,0,size);
@@ -31,7 +31,7 @@ public class ArrayListCustom<T> {
     }
     public void add(T element){
         growCapacity();
-        elements[size++] = element;
+        elements[size] = element;
         size++;
     }
     public void remove(int index){
@@ -45,9 +45,19 @@ public class ArrayListCustom<T> {
         size--;
         elements[size] = null;
     }
+    public void removeElement(T element){
+        int index = 0;
+        for(int i = 0; i < size; i++){
+            if ((element == null && elements[i] == null) || (element != null && element.equals(elements[i]))) {
+               index = i;
+            }
+        }
+        remove(index);
+    }
     public boolean contains(T element){
         for(int i = 0; i < size; i++){
-            if(elements[i].equals(element)) return true;
+
+            if ((element == null && elements[i] == null) || (element != null && element.equals(elements[i])))  return true;
         }
         return false;
     }

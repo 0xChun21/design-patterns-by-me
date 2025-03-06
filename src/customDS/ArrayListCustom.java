@@ -1,6 +1,8 @@
 package customDS;
 
-public class ArrayListCustom<T> {
+import java.util.Iterator;
+
+public class ArrayListCustom<T> implements Iterable<T> {
     private T[] elements;
     private int size;
     private static final int DEFAULT_CAPACITY = 10;
@@ -66,5 +68,21 @@ public class ArrayListCustom<T> {
             elements[i] = null;
         }
         size = 0;
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return new Iterator<T>() {
+            private int currentIndex = 0;
+            @Override
+            public boolean hasNext() {
+                return currentIndex < size;
+            }
+
+            @Override
+            public T next() {
+                return (T) elements[currentIndex++];
+            }
+        };
     }
 }

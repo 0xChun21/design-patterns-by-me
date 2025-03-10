@@ -1,10 +1,7 @@
 package akashicRercord;
 
-public class EmailNotifier implements IAkashaObserver{
-    @Override
-    public void update(Object obj, Object arg) {
+public class EmailNotifier {
 
-    }
 
 
 //    @Override

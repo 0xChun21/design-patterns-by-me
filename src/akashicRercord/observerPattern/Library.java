@@ -1,8 +1,8 @@
-package akashicRercord;
+package akashicRercord.observerPattern;
 
+import akashicRercord.Akasha;
+import akashicRercord.Member;
 import customDS.ArrayListCustom;
-
-import java.awt.print.Book;
 
 public class Library implements ISubject{
 

@@ -1,4 +1,6 @@
-package akashicRercord;
+package akashicRercord.builderPattern;
+
+import akashicRercord.Akasha;
 
 public interface IAkashaBuilder {
 

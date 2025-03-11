@@ -1,6 +1,8 @@
-package akashicRercord;
+package akashicRercord.program;
 
 
+import akashicRercord.Akasha;
+import akashicRercord.Member;
 import akashicRercord.validator.ValidateDataInput;
 
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package akashicRercord;
+package akashicRercord.observerPattern;
 
 // observer
 public interface IObserver {

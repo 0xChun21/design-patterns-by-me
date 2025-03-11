@@ -1,4 +1,6 @@
-package akashicRercord;
+package akashicRercord.builderPattern;
+
+import akashicRercord.Akasha;
 
 public class AkashaBuilder implements IAkashaBuilder {
     private String id;

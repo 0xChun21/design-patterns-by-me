@@ -1,6 +1,4 @@
-package akashicRercord;
-
-import java.util.Observer;
+package akashicRercord.observerPattern;
 
 public interface ISubject {
 

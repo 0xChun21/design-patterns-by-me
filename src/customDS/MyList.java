@@ -2,12 +2,12 @@ package customDS;
 
 import java.util.Iterator;
 
-public class ArrayListCustom<T> implements Iterable<T> {
+public class MyList<T> implements Iterable<T> {
     private T[] elements;
     private int size;
     private static final int DEFAULT_CAPACITY = 10;
 
-    public ArrayListCustom() {
+    public MyList() {
         elements = (T[]) new Object[DEFAULT_CAPACITY];
         size = 0;
     }
